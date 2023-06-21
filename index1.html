@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abirami Portfolio</title>
+    <style>
+      * {
+        font-size: "large";
+        justify-content: space-evenly;
+      }
+      .box {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background: rgb(217, 153, 224, 0.2);
+        align-items: center;
+        overflow-wrap: break-word;
+        border-radius: 20%;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(154, 151, 158);
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 10px;
+      }
+      #link:hover {
+        border-bottom: 3px solid lightseagreen;
+        color: aqua;
+      }
+      td {
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #s {
+        padding: 30px;
+        width: 50px;
+        height: 50px;
+      }
+      #lan {
+        padding: 10px;
+      }
+      #go {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 8%;
+        right: 5%;
+        border-radius: 50%;
+      }
+      body {
+        margin-left: 5px;
+        background: black;
+        color: azure;
+      }
+      #web {
+        width: 550px;
+        animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        width: 100%;
+      "
+    >
+      <span> <h1>Abirami Thangamariappan</h1></span>
+      <span style="text-align: end"
+        ><h3 style="text-align: right; width: 100%; padding: 10px">
+          <span style="padding: 10px"><a id="link" href="#home">Home</a></span>
+          <span style="padding: 10px"
+            ><a id="link" href="#about">About</a></span
+          >
+          <span style="padding: 10px"
+            ><a id="link" href="#tech">Techology</a></span
+          >
+          <span style="padding: 10px"
+            ><a id="link" href="#contact">Contact</a></span
+          >
+          <span style="padding: 10px; padding-right: 30px"
+            ><a id="link" href="#help">Help</a></span
+          >
+        </h3>
+      </span>
+    </div>
+    <br id="home" />
+    <br />
+    <div style="padding-top: 100px">
+      <div style="display: flex; flex-direction: column">
+        <center>
+          <img
+            src="./dev.png"
+            width="300px"
+            height="300px"
+            alt="Full Stack Developer"
+          />
+        </center>
+        <center id="about">
+          <p id="web" style="font-weight: 700">
+            Web Development has a good Scope!...
+          </p>
+        </center>
+      </div>
+      <br />
+      <div>
+        <center>
+          <h2>Hi There!<br /><br />I am Abirami Thangamariappan.</h2>
+        </center>
+      </div>
+    </div>
+    <div
+      style="
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 30px;
+        "
+      >
+        <p
+          style="
+            font-size: large;
+            text-align: justify;
+            margin-right: 10px;
+            margin-left: 10px;
+            word-spacing: 1px;
+            letter-spacing: 2px;
+          "
+        >
+          I am Abirami Thangamariappan. Currently doing Btech IT 3<sup>rd</sup>
+          year. I know the skill like
+          <strong>Frontend, Backend, Web Design</strong> using various tools.
+          Worked in two company for Internship under Full Stack Development.
+          Done few projects and worked on website created for learning.
+        </p>
+
+        <div class="skill-list">
+          <h2>Skill Learned</h2>
+          <ul style="font-size: large">
+            <li><a id="link" href="https://www.learn-html.org">HTML</a></li>
+            <li><a id="link" href="https://www.w3.org/Style/CSS">CSS</a></li>
+            <li><a id="link" href="https://js.org">JavaScript</a></li>
+            <li><a id="link" href="https://reactjs.org">React</a></li>
+            <li><a id="link" href="https://nodejs.org">Node</a></li>
+            <li><a id="link" href="https://angular.io">Angular</a></li>
+            <li><a id="link" href="expressjs.com">Express</a></li>
+            <li>
+              <a
+                id="link"
+                href="https://www.freecodecamp.org/news/what-are-progressive-web-apps"
+                >PWA</a
+              >
+            </li>
+            <li>
+              <a id="link" href="https://www.framer.com/motion"
+                >Framer Motion</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="padding: 30px; font-size: large">
+        <table gab="2" border="2" style="padding: 10px">
+          <tr>
+            <th>Skill</th>
+            <th>Use</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>For user View(static page)</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>To Style the Web Pages</td>
+          </tr>
+          <tr>
+            <td>JS</td>
+            <td>For Dynamic View of web</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>to create interactive UIs</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>supports full-stack development</td>
+          </tr>
+          <tr>
+            <td>Node</td>
+            <td>open source server environment</td>
+          </tr>
+          <tr>
+            <td>Express</td>
+            <td>minimal and flexible Node frame work</td>
+          </tr>
+          <tr>
+            <td>PWA</td>
+            <td>Access web in offline</td>
+          </tr>
+          <tr>
+            <td>Framer Motion</td>
+            <td>For Animation in web</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br id="tech" />
+    <div
+      style="
+        padding: 50px;
+        background: rgb(217, 153, 224, 0.2);
+        border: 3px solid violet;
+        margin: 8%;
+      "
+    >
+      <h2>Technoloy Used</h2>
+      <br />
+      <img src="./html.png" width="100px" id="lan" height="100px" />
+      <img src="./css.png" width="100px" id="lan" height="100px" />
+      <img src="./js.png" width="100px" id="lan" height="100px" />
+      <img src="./node.png" width="100px" id="lan" height="100px" />
+      <img src="./icon-192x192.png" width="100px" id="lan" height="100px" />
+      <img src="./react.png" width="100px" id="lan" height="100px" />
+      <img
+        src="./OIP.jfif"
+        width="100px"
+        style="padding-right: 30px"
+        id="lan"
+        height="100px"
+      />
+      <img src="./mongodb.png" width="100px" id="lan" height="100px" />
+    </div>
+
+    <div
+      style="
+        padding: 50px;
+        background: rgb(217, 153, 224, 0.2);
+        border: 3px solid violet;
+        margin: 8%;
+      "
+    >
+      <h2>Tools Used</h2>
+      <br />
+      <img src="./git.png" width="100px" id="lan" height="100px" />
+      <img src="./postman.png" width="100px" id="lan" height="100px" />
+      <img src="./vs.png" width="100px" id="lan" height="100px" />
+      <img
+        src="./Screenshot_20221116_090808.png"
+        width="100px"
+        id="lan"
+        height="100px"
+      />
+    </div>
+    <br id="contact" /><br /><br /><br />
+
+    <h3>Contact</h3>
+    <center>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 50% 50%;
+          overflow-wrap: anywhere;
+        "
+      >
+        <div style="display: flex; flex-direction: column">
+          <a href="https://github.com/login" id="s" target="blank"
+            ><img src="./git.png" width="100px" height="100px" alt="git"
+          /></a>
+          <a href="https://www.linkedin.com/login/" id="s" target="blank"
+            ><img src="./in.png" width="100px" height="100px" alt="git"
+          /></a>
+          <a href="https://github.com/login" id="s" target="blank"
+            ><img
+              src="./NicePng_oregon-outline-png_3563301.png"
+              width="100px"
+              height="100px"
+              alt="git"
+          /></a>
+          <a href="mailto:ramithangaraj2002@gmail.com" id="s"
+            ><img src="./email.png" width="100px" height="100px" alt="git"
+          /></a>
+        </div>
+        <div style="opacity: 0.9; padding-top: 60px">
+          <img
+            style="opacity: 0.7; border-radius: 20%"
+            src="./file.gif"
+            width="400px"
+            height="400px"
+            alt="git"
+          />
+        </div>
+      </div>
+    </center>
+    <br /><br /><br />
+    <a href="#home"
+      ><img
+        id="go"
+        src="./arrow.png"
+        width="100px"
+        height="100px"
+        alt="go to top"
+    /></a>
+    <br id="help" /><br /><br />
+    <center>
+      <div
+        style="
+          padding: 30px;
+          width: fit-content;
+          background: rgb(217, 153, 224, 0.2);
+          word-spacing: 8px;
+          letter-spacing: 3px;
+        "
+      >
+        <h3><u>Way to Success</u></h3>
+        <br />
+        To become Web developer follow the above sill.<br />
+        HTML --> CSS --> JS --> Frame works(Angular/react).<br />
+        Backend -> database(sql/mongodb)<br />
+        Extra --> PWA --> Framer Motion.
+        <br /><br />
+        <img
+          src="./Screenshot_20230130_034613.png"
+          width="600px"
+          height="400px"
+          alt="map"
+          style="opacity: 0.7; border-radius: 20%"
+        />
+      </div>
+    </center>
+  </body>
+</html>
